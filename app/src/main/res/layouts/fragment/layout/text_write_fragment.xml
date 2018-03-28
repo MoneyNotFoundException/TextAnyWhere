@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:ignore="ResAuto">
+
+    <ListView
+        android:id="@+id/write_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!--<com.zhouzining.testfortext.view.satemenu.SatelliteMenu-->
+    <!--android:id="@+id/menu_satellite"-->
+    <!--sat:closeOnClick="true"-->
+    <!--sat:expandDuration="500"-->
+    <!--sat:mainImage="@mipmap/ic_launcher"-->
+    <!--sat:satelliteDistance="170dp"-->
+    <!--sat:totalSpacingDegree="90"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:layout_margin="8dp" />-->
+
+    <com.zhouzining.testfortext.view.DragButton
+        android:id="@+id/write_dragbtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="30dp"
+        android:backgroundTint="#00000000"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher_round"
+        app:backgroundTint="@color/red"
+        app:elevation="0dp"
+        app:pressedTranslationZ="0dp" />
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">随处笔记</string>
+    <string name="goodmemeory">好记性不如
+        " 随处笔记 "</string>
+    <string name="action_settings">设置</string>
+    <string name="open_recently">最近打开</string>
+    <string name="write_hand">手记</string>
+    <string name="write_voice">语音记</string>
+    <string name="write_pic">图片记</string>
+    <string name="write_money">账单记</string>
+    <string name="system_error">系统错误，请联系官方客服管理人员！</string>
+    <string name="input_name">请输入名字</string>
+    <string name="sure">确认</string>
+    <string name="cancel">取消</string>
+    <string name="back">返回</string>
+
+</resources>

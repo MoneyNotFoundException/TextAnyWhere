@@ -1,0 +1,67 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.zhouzining.testanywhere"
+        minSdkVersion 16
+        targetSdkVersion 17
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+//    分渠道打包需要
+    flavorDimensions "default"
+    productFlavors {
+        other {
+            dimension "default"
+            manifestPlaceholders = [STORE_NAME: "其他"]
+        }
+    }
+    sourceSets {
+        main {
+            res.srcDirs =
+                    [
+                            'src/main/res/layouts/activity',
+                            'src/main/res/layouts/item',
+                            'src/main/res/layouts/fragment',
+                            'src/main/res/layouts/other',
+                            'src/main/res/layouts',
+                            'src/main/res'
+                    ]
+            assets.srcDirs = ['src/main/assets', 'src/main/assets/']
+        }
+    }
+}
+
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.android.support:design:26.1.0'
+    compile 'com.google.code.gson:gson:2.8.2'
+    compile 'com.google.code.gson:gson-parent:2.8.2'
+    compile 'com.facebook.stetho:stetho:1.4.1'
+    compile 'com.facebook.stetho:stetho-okhttp3:1.4.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    //noinspection GradleCompatible
+    compile 'com.android.support:recyclerview-v7:21.0.0'
+    //noinspection GradleCompatible
+    compile 'com.android.support:support-v4:20.+'
+    compile 'com.daimajia.swipelayout:library:1.2.0@aar'
+    compile 'com.daimajia.easing:library:1.0.0@aar'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.daimajia.androidanimations:library:1.1.2@aar'
+    compile 'com.romainpiel.shimmer:library:1.4.0@aar'
+    implementation project(':sweetAlert')
+    implementation project(':video')
+}

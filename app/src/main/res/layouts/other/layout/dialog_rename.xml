@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#ffffff"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/input_name"
+        android:textColor="#2b2b2b"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/rename_dialog_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#2b2b2b"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/rename_dialog_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:background="#00000000"
+            android:text="@string/sure"
+            android:textColor="@color/turquoise"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/rename_dialog_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:background="#00000000"
+            android:text="@string/cancel"
+            android:textColor="@color/turquoise"
+            android:textSize="18sp" />
+    </LinearLayout>
+</LinearLayout>
